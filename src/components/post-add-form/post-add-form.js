@@ -8,7 +8,6 @@ export default class PostAddForm extends Component {
         this.state = {
             text: ''
         }
-        this.maxId = 4;
         this.onValueChange = this.onValueChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
     }
@@ -23,7 +22,7 @@ export default class PostAddForm extends Component {
         this.setState({
             text: ''
         });
-    }
+    }   
     render() {
         return (
             <form 
