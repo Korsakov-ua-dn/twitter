@@ -27,11 +27,11 @@ export default class App extends Component { // extends Component - наслед
         })
     }
     addItem = (body) => {
-        this.maxId = 4;
+        const newId = this.state.data.length+1
         const newItem = {
             label: body,
             important: false,
-            id: this.maxId++
+            id: newId
         }
         this.setState(({data}) => {
             const newArr = [...data, newItem];
