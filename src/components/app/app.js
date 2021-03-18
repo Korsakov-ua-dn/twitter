@@ -15,7 +15,7 @@ export default class App extends Component { // extends Component - наслед
             {label: "I need a break...", important: false, like: false, id: 3}
         ],
         term: '',
-        filter: 'All'
+        filter: 'all'
     }
     deleteItem = (id) => {
         this.setState(({data}) => {
